@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSU Library</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <i class="bx bxl-codepen"></i>
+                <span>SSU Library</span>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <div class="user">
+            <img src="3dgifmaker60736.gif" alt="SSU" class="user-img">
+            <div>
+                <p class="bold">b0xxer</p>
+                <p>Admin</p>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class='bx bx-library'></i>
+                    <span class="nav-item">Library</span>
+                </a>
+                <span class="tooltip">Library</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-stats' ></i>
+                    <span class="nav-item">Stats</span>
+                </a>
+                <span class="tooltip">Stats</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-chat'></i>
+                    <span class="nav-item">Chat</span>
+                </a>
+                <span class="tooltip">Chat</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="nav-item">Settings</span>
+                </a>
+                <span class="tooltip">Settings</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <div class="topnav">
+                <span>
+                    <input type="text" placeholder="Search for a game">
+                    <i class='bx bx-search'></i>
+                </span>
+            </div>
+        </div>
+    </div>
+        <div class="container">
+            <div class="topnav">
+                <span>
+                <input type="text" placeholder="Search for a game">
+                <i class='bx bx-search' ></i>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    let btn = document.querySelector("#btn");
+    let sidebar = document.querySelector(".sidebar");
+    let searchBtn = document.querySelector(".bx-search");
+
+    btn.onclick = function() {
+        sidebar.classList.toggle("active");
+    }
+    searchBtn.onclick = function() {
+        sidebar.classList.toggle("active");
+    }
+</script>
+
+</html>
